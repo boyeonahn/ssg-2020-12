@@ -1,12 +1,96 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8QZL06CJKE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8QZL06CJKE');
+</script>
 <meta charset="UTF-8" />
-<title>Bo의 쁠로그</title>
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=1200">
+<meta name="apple-mobile-web-app-title" content="Developers" />
+<!-- 메타태그정보 //-->
+<!-- META -->
+<link rel="canonical" href="https://blog.aby.kr" />
+<meta name="subject" content="002. for 문 개념"/>
+<meta name="title" content="Developers" />
+<meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
+<meta name="copyright" content="Developers" />
+<meta name="pubdate" content="2020-12-31T12:20:09" />
+<meta name="lastmod" content="2020-12-31T12:20:09" />
+<!-- OPENGRAPH -->
+<meta property="og:site_name" content="Developers" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="002. for 문 개념" />
+<meta property="og:description" content=" for 문은 while 을 for 로 교환 후, 앞 뒤 ; 붙이기
+
+→ for ( int i = 1; i ≤ 10; ) → 공간 설계를 안으로 집어 넣은거 빼고는 while 문과 똑같다.
+
+반복문의 시작과 끝을 한눈에 볼 수 있는 장점이 있음. (증가코드 포함)
+매개변수는 값을 정해줘야함
+boolean : true or false
+float/double : 실수
+static 는 class 마다 하나씩 생기는데 , static 이 붙은 코드끼리만 연결이됨
+if 지옥문 벗어나기 (복습은 강의 33)
+" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:image" content="/img/logo/logo_opengraph.png" />
+<meta property="og:image:alt" content="blog.aby.kr" />
+<meta property="og:image:width" content="486" />
+<meta property="og:image:height" content="254" />
+<meta property="og:updated_time" content="2020-12-31T12:20:09"/>
+<meta property="og:pubdate" content="2020-12-31T12:20:09" />
+<meta property="og:url" content="https://blog.aby.kr" />
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="002. for 문 개념" />
+<meta name="twitter:site" content="@Developers" />
+<meta name="twitter:creator" content="@Developers" />
+<meta name="twitter:image" content="/img/logo/logo_opengraph.png">
+<meta name="twitter:description" content=" for 문은 while 을 for 로 교환 후, 앞 뒤 ; 붙이기
+
+→ for ( int i = 1; i ≤ 10; ) → 공간 설계를 안으로 집어 넣은거 빼고는 while 문과 똑같다.
+
+반복문의 시작과 끝을 한눈에 볼 수 있는 장점이 있음. (증가코드 포함)
+매개변수는 값을 정해줘야함
+boolean : true or false
+float/double : 실수
+static 는 class 마다 하나씩 생기는데 , static 이 붙은 코드끼리만 연결이됨
+if 지옥문 벗어나기 (복습은 강의 33)
+" />
+<!-- GOOGLE+ -->
+<meta itemprop="headline" content="Developers" />
+<meta itemprop="name" content="Developers" />
+<meta itemprop="description" content=" for 문은 while 을 for 로 교환 후, 앞 뒤 ; 붙이기
+
+→ for ( int i = 1; i ≤ 10; ) → 공간 설계를 안으로 집어 넣은거 빼고는 while 문과 똑같다.
+
+반복문의 시작과 끝을 한눈에 볼 수 있는 장점이 있음. (증가코드 포함)
+매개변수는 값을 정해줘야함
+boolean : true or false
+float/double : 실수
+static 는 class 마다 하나씩 생기는데 , static 이 붙은 코드끼리만 연결이됨
+if 지옥문 벗어나기 (복습은 강의 33)
+" />
+<meta itemprop="image" content="/img/logo/logo_opengraph.png" />
+
+<title>002. for 문 개념 | Developers | ARTICLE DETAIL</title>
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <link rel="stylesheet" href="app.css" />
+<meta name="google-site-verification" content="kBMgTjO9loCuIJUFRTfJvTKiT6ojjWL_x_lpxGtM-6c" />
+
+<link rel="icon" href="favicon.ico"/>
+
+<!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="body-content min-height-100vh flex flex-column">
@@ -39,7 +123,7 @@
 								<span>ARTICLES</span>
 							</a>
 							<ul>
-								<li><a href="article_list_free_1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>FREE LIST</span></a></li><li><a href="article_list_notice_1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
+								<li><a href="article_list_it_1.html" class="block"><i class="fas fa-clipboard-list"></i> <span>IT LIST</span></a></li>
 							</ul>
 						</li>
 						<li>
@@ -64,9 +148,9 @@
 							</ul>
 						</li>
 						<li>
-							<a href="https://www.youtube.com/channel/UCHqNPvGJw3SEcxJj_0N-OdQ/videos" class="block">
-								<i class="fab fa-youtube-square"></i>
-								<span>YOUTUBE</span>
+							<a href="stat.html" class="block">
+								<i class="fas fa-chart-pie"></i>
+								<span>STATISTICS</span>
 							</a>
 						</li>
 					</ul>
@@ -101,24 +185,68 @@
 <section class="section-1 con-min-width">
 	<div class="con">
 		<div class="article-detail">
-			<h2 class="article-detail__title">알기 쉬운 자바</h2>
+			<h2 class="article-detail__title">002. for 문 개념</h2>
 
 			<div class="article-detail__sub-info flex">
-				<div class="article-detail__board-name">게시글 정보 :</div>
-				<div class="article-detail__reg-date">2020-12-21 10:21:15</div>
-				<div class="article-detail__writer">Bo깜썽</div>
+				<div class="article-detail__board-name">SQL</div>
+				<div class="article-detail__reg-date">2020-12-18 09:25:55</div>
+				<div class="article-detail__writer">Boyeon</div>
+				<div class="article-detail__hit-count">조회수 : 8</div>
+				<div class="article-detail__likes-count">추천수 : 1</div>
+				<div class="article-detail__comments-count">댓글수 : 1</div>
 			</div>
 
-			<div class="article-detail__body main-font">는 다음 이 시간에 만나요</div>
+			<script type="text/x-template">
+# INSERT
+- for 문은 while 을 for 로 교환 후, 앞 뒤 ; 붙이기
+
+	→ for ( int i = 1; i ≤ 10; ) → 공간 설계를 안으로 집어 넣은거 빼고는 while 문과 똑같다.
+
+반복문의 시작과 끝을 한눈에 볼 수 있는 장점이 있음. (증가코드 포함)
+매개변수는 값을 정해줘야함
+boolean : true or false
+float/double : 실수
+static 는 class 마다 하나씩 생기는데 , static 이 붙은 코드끼리만 연결이됨
+if 지옥문 벗어나기 (복습은 강의 33)
+
+# For문 예시
+```sql
+public Article getArticle(int id){
+	Aricle article();
+	return article();
+```
+			</script>
+			<div class="article-detail__body main-font toast-ui-viewer"></div>
+
+			<div class="article-detail__reply-box">
+				<div id="disqus_thread"></div>
+				<script>
+					var disqus_config = function () {
+				        this.page.url = 'https://blog.aby.kr/article_detail_2.html';
+				        this.page.identifier = 'article_detail_2.html';
+				    };
+					(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+						s.src = 'https://my-ssg-2.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+					})();
+				</script>
+				<noscript>
+					Please enable JavaScript to view the
+					<a href="https://disqus.com/?ref_noscript">comments powered by
+						Disqus.</a>
+				</noscript>
+			</div>
 
 			<div class="article-detail__menu flex">
-				<a title="알기 쉬운 자바"
+				<a title="001. 함수의 개념"
 					href="article_detail_1.html"
 					class="hover-underline ">&lt;
 					이전글</a>
-				<a href="article_list_free_1.html"
+				<a href="article_list_it_1.html"
 					class="hover-underline ">목록</a>
-				<a title="전혀 어렵지 않은 SQL"
+				<a title=""
 					href="article_detail_0.html"
 					class="hover-underline none">다음글
 					&gt;</a>
