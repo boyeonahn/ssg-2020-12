@@ -181,12 +181,12 @@ add를 사용하면 [] 빈 공간에 add( ) 의 숫자가 척척척 꽂힌다.
 			</div>
 
 			<script type="text/x-template">
-# INSERT
+# 개념
 - index = 방번호
 - add를 사용하면 [] 빈 공간에 add( ) 의 숫자가 척척척 꽂힌다.
 
-# For문 예시
-```sql
+# add 사용 예시
+```java
 class app {
 	int numsSize = 0;
 	int [] nums = new int[10];
@@ -195,30 +195,31 @@ public void add(int num) {
 	if (numsSize >= numsSize.length) {
 		System.out.println( "Array is full");
 		return;
-}
+		}
 	nums[numsSize] = num;
 	numsSize++;
-}
+	}
 
 public void printArray() {
 	for (int i = 0; i = length; i++) {
 		System.out.printf("nums[%d] : %d\n", i, nums[i]);
 			nums[i - 1] = nums[i]
+		}
 	}
-}
 
 public void remove(int index) {
 	for (int i = index + i; i < numsSize; i++) {
-	}
+		}
 	numsSize--;
-}
+	}
 
 //위의 코드를 한번에 실행하는 기능 개념
 public void run {
 	add(10);
-printArray();
-	add(20);
-	add(30);
+	printArray();
+		add(20);
+		add(30);
+	}
 ```
 			</script>
 			<div class="article-detail__body main-font toast-ui-viewer"></div>
