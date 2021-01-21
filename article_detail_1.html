@@ -8,7 +8,7 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.aby.kr" />
-<meta name="subject" content="001. 함수의 개념" />
+<meta name="subject" content="001. JAVA 입문자를 위한 정보" />
 <meta name="title" content="Developers" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Developers" />
@@ -17,25 +17,54 @@
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Developers" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="001. 함수의 개념"" />
-<meta property="og:description" content=" 함수의 개념
+<meta property="og:title" content="001. JAVA 입문자를 위한 정보"" />
+<meta property="og:description" content=" JAVA 입문자를 위한 정보
 
-- int (숫자); 라는 의미는 숫자 안에 0이 담겨있다는 뜻이다.
+# [ Java를 시작하기 위한 절차 ]
+1. Project 생성
 
-- Article article; 은 안에 null이 들어있다는 뜻이다. 그렇기 때문에, Article article = new Article ; 로 작동이 된다.
+2. Package 만들기
+- name은 소문자로 작성 (관례)
+- '.'는 파일 안에 파일 생성
+- ex. com.sbs -> com.파일에 sbs파일 생성
 
-new Article을 하는 순간 새로운 공간은 생성된다.
-그래서 article.id 는 article에 있는 id에 이 정보가 쏙! 간다는 뜻!!
+3. Class 만들기
+- Name은 무조건 대문자로 시작
+- Main은 시작점으로 무조건 있어야함 (관례)
 
-article.자기소개();는 article에 있는 자기소개 기능을 실행한다는 뜻
+# [ Java Tip ]
 
-→ 그렇다면 article 곳에서 void 자기소개() 를 만들어서 아래에 기능을 작성하면 끝!
+- 저장은 숨쉬듯이 해야함 (강조)
+- 빨간 점은 오류가 있다는 뜻
+- 나도 모르게 더블클릭(점) 박을 수 있는데 조심할 것.
+- 항상 코드를 짜기 전에, ToDo List를 작성하고 하기 쉬운 일부터 차근차근 해결할 것.
+- 코드를 짜면서 계속해서 잘 나오는가 'run'돌려 확인하기
+- 만약 진짜 잘못한 점을 모르겠으면 window -> show view -> console 확인해보기
 
-void 로 새로운 함수를 만들었을 경우
-void를 쓸꺼면 return을 안써도 되지만, 만약 return을 쓸꺼면, 뒤에 오는 형태에 따라 void가 변한다. void 가 → 정수면 int, 문자면 String
-즉, 함수 뒤에 공식을 쓰고, return 값에 알고 싶은 수를 작성하면 원하는 값이 나옴.
+# [ 개발환경 Setting ]
+- Github와 연결하기
 
-참고로 함수에 정수, 문자가 섞여 있으면, return값 뒤랑 함수 앞에 조건만 일치 시켜주면 괜찮다.
+### 강의 내용
+- 코드 실행은 위에서 아래로 진행된다.
+- System.out : 모니터 -> 출력장치
+- System.in : 키보드 -> 입력장치
+- 공식은 앞에서부터 계산되는데 앞에서 정수가 '문자'로 취급되었으면 뒤에도 똑같이 '정수'로 취급됨.
+- 변수 : 뭔가를 저장 할 수 있는 (이름붙여진) 공간
+	-[ 변수타입 = String ] [ 변수명 = Command ] int = 정수 / String 문자
+
+- 조건문 if는 소괄호에 있는 조건이 참일 경우에만 대괄호 안에 있는 공식이 실행됨.
+- if 조건문이 참이면 else if는 실행되지 않는다. else는 if,else if 모두 실행되지 않았을 때 작동.
+- equals : 같다
+- 키보드 입력 받기
+   - Scanner (스캐너이름) = new Scanner(System.in);
+      - 변수타입 변수명 = 스캐너이름.nextLine();
+- '=' 이 있으면 우측에서부터 실행됨
+- i += 1 == i++; : 둘 다 i의 값이 1만큼 증가한다. 라는 뜻
+- while 은 반복문이며 if와 비슷한 성질을 가지고 있음.
+    - 거짓이면 실행을 안하고, 참이면 실행됨.
+    - if문과 다르게 while문은 {}를 뚫지 못하고 계속 그 안에서 반복됨.
+    - 그래서 항상 무한루프에 빠질 가능성이 있기에, 빠져나올 가능성을 만들어놔야함.
+    -ex) break;
 
 " />
 <meta property="og:locale" content="ko_KR" />
@@ -48,11 +77,11 @@ void를 쓸꺼면 return을 안써도 되지만, 만약 return을 쓸꺼면, 뒤
 <meta property="og:url" content="https://blog.aby.kr" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="001. 함수의 개념" />
+<meta name="twitter:title" content="001. JAVA 입문자를 위한 정보" />
 <meta name="twitter:site" content="@Developers" />
 <meta name="twitter:creator" content="@Developers" />
 <meta name="twitter:image" content="/img/logo/logo_opengraph.png">
-<meta name="twitter:description" content=" 함수의 개념
+<meta name="twitter:description" content=" JAVA 입문자를 위한 정보
 
 - int (숫자); 라는 의미는 숫자 안에 0이 담겨있다는 뜻이다.
 
@@ -74,7 +103,7 @@ void를 쓸꺼면 return을 안써도 되지만, 만약 return을 쓸꺼면, 뒤
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="Developers" />
 <meta itemprop="name" content="Developers" />
-<meta itemprop="description" content=" 함수의 개념
+<meta itemprop="description" content=" JAVA 입문자를 위한 정보
 
 - int (숫자); 라는 의미는 숫자 안에 0이 담겨있다는 뜻이다.
 
@@ -96,7 +125,7 @@ void를 쓸꺼면 return을 안써도 되지만, 만약 return을 쓸꺼면, 뒤
 " />
 <meta itemprop="image" content="/img/logo/logo_opengraph.png" />
 
-<title>001. 함수의 개념 | Developers | ARTICLE DETAIL</title>
+<title>001. JAVA 입문자를 위한 정보 | Developers | ARTICLE DETAIL</title>
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
@@ -210,10 +239,10 @@ void를 쓸꺼면 return을 안써도 되지만, 만약 return을 쓸꺼면, 뒤
 <section class="section-1 con-min-width">
 	<div class="con">
 		<div class="article-detail">
-			<h2 class="article-detail__title">001. 함수의 개념</h2>
+			<h2 class="article-detail__title">001. JAVA 입문자를 위한 정보</h2>
 
 			<div class="article-detail__sub-info flex">
-				<div class="article-detail__board-name">SQL</div>
+				<div class="article-detail__board-name">JAVA</div>
 				<div class="article-detail__reg-date">2020-12-17 12:55:38</div>
 				<div class="article-detail__writer">Boyeon</div>
 				<div class="article-detail__hit-count">조회수 : 14</div>
@@ -222,31 +251,51 @@ void를 쓸꺼면 return을 안써도 되지만, 만약 return을 쓸꺼면, 뒤
 			</div>
 
 			<script type="text/x-template">
-# 함수의 개념
-- int (숫자); 라는 의미는 숫자 안에 0이 담겨있다는 뜻이다.
+# [ Java를 시작하기 위한 절차 ]
+1. Project 생성
 
-- Article article; 은 안에 null이 들어있다는 뜻이다. 그렇기 때문에, Article article = new Article ; 로 작동이 된다.
+2. Package 만들기
+- name은 소문자로 작성 (관례)
+- '.'는 파일 안에 파일 생성
+- ex. com.sbs -> com.파일에 sbs파일 생성
 
-	new Article을 하는 순간 새로운 공간은 생성된다.
-	그래서 article.id 는 article에 있는 id에 이 정보가 쏙! 간다는 뜻!!
+3. Class 만들기
+- Name은 무조건 대문자로 시작
+- Main은 시작점으로 무조건 있어야함 (관례)
 
-	article.자기소개();는 article에 있는 자기소개 기능을 실행한다는 뜻
+# [ Java Tip ]
 
-	→ 그렇다면 article 곳에서 void 자기소개() 를 만들어서 아래에 기능을 작성하면 끝!
+- 저장은 숨쉬듯이 해야함 (강조)
+- 빨간 점은 오류가 있다는 뜻
+- 나도 모르게 더블클릭(점) 박을 수 있는데 조심할 것.
+- 항상 코드를 짜기 전에, ToDo List를 작성하고 하기 쉬운 일부터 차근차근 해결할 것.
+- 코드를 짜면서 계속해서 잘 나오는가 'run'돌려 확인하기
+- 만약 진짜 잘못한 점을 모르겠으면 window -> show view -> console 확인해보기
 
-void 로 새로운 함수를 만들었을 경우
-void를 쓸꺼면 return을 안써도 되지만, 만약 return을 쓸꺼면, 뒤에 오는 형태에 따라 void가 변한다. void 가 → 정수면 int, 문자면 String
-즉, 함수 뒤에 공식을 쓰고, return 값에 알고 싶은 수를 작성하면 원하는 값이 나옴.
+# [ 개발환경 Setting ]
+- Github와 연결하기
 
-참고로 함수에 정수, 문자가 섞여 있으면, return값 뒤랑 함수 앞에 조건만 일치 시켜주면 괜찮다.
+### 강의 내용
+- 코드 실행은 위에서 아래로 진행된다.
+- System.out : 모니터 -> 출력장치
+- System.in : 키보드 -> 입력장치
+- 공식은 앞에서부터 계산되는데 앞에서 정수가 '문자'로 취급되었으면 뒤에도 똑같이 '정수'로 취급됨.
+- 변수 : 뭔가를 저장 할 수 있는 (이름붙여진) 공간
+	-[ 변수타입 = String ] [ 변수명 = Command ] int = 정수 / String 문자
 
-
-# SELECT 예시
-```int plus(int a, int b, String d) { 
-return a + b + Integer.parseInt(d)+ ""; 
-}
-// 함수 앞에 int를 썼어도, return뒤에 "" 이거를 넣어주면 괜찮아짐
-```
+- 조건문 if는 소괄호에 있는 조건이 참일 경우에만 대괄호 안에 있는 공식이 실행됨.
+- if 조건문이 참이면 else if는 실행되지 않는다. else는 if,else if 모두 실행되지 않았을 때 작동.
+- equals : 같다
+- 키보드 입력 받기
+   - Scanner (스캐너이름) = new Scanner(System.in);
+      - 변수타입 변수명 = 스캐너이름.nextLine();
+- '=' 이 있으면 우측에서부터 실행됨
+- i += 1 == i++; : 둘 다 i의 값이 1만큼 증가한다. 라는 뜻
+- while 은 반복문이며 if와 비슷한 성질을 가지고 있음.
+    - 거짓이면 실행을 안하고, 참이면 실행됨.
+    - if문과 다르게 while문은 {}를 뚫지 못하고 계속 그 안에서 반복됨.
+    - 그래서 항상 무한루프에 빠질 가능성이 있기에, 빠져나올 가능성을 만들어놔야함.
+    -ex) break;
 			</script>
 			<div class="article-detail__body main-font toast-ui-viewer"></div>
 
